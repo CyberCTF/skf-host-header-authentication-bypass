@@ -1,0 +1,14 @@
+{
+  "title": "OWASP SKF Host Header Authentication Bypass",
+  "description": "A Flask product administration panel. The /dashboard and delete actions are meant for local users only, and the application decides what is local from the Host header.",
+  "question": "Reach the local-only administration panel and delete a product without logging in, by tampering with the Host header.",
+  "category": "WEB",
+  "difficulty": 2,
+  "evidence_kind": "SECRET",
+  "capabilities": [
+    "host-header-injection",
+    "authentication-bypass",
+    "http-headers",
+    "access-control"
+  ]
+}
