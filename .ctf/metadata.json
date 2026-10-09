@@ -4,11 +4,5 @@
   "question": "Reach the local-only administration panel and delete a product without logging in, by tampering with the Host header.",
   "category": "WEB",
   "difficulty": 2,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "host-header-injection",
-    "authentication-bypass",
-    "http-headers",
-    "access-control"
-  ]
+  "evidence_kind": "SECRET"
 }
