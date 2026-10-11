@@ -1,0 +1,42 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Reach the local-only panel and retrieve the flag (/ctf/flag).",
+      "check": {
+        "evidence": "SECRET",
+        "format": "FLAG{%s}"
+      },
+      "dev": "FLAG{dev-skf-host-header-authentication-bypass}",
+      "hints": [
+        "The application decides who is local from a request header.",
+        "Read about Host header attacks."
+      ],
+      "steps": [
+        {
+          "key": "header",
+          "title": "Find the trusted header",
+          "prompt": "Which HTTP request header decides access?",
+          "check": {
+            "answer": [
+              "host",
+              "host header"
+            ]
+          }
+        },
+        {
+          "key": "route",
+          "title": "Find the panel",
+          "prompt": "Which route is meant for local users? (path)",
+          "check": {
+            "answer": [
+              "/dashboard",
+              "dashboard"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
