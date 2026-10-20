@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-skf-host-header-authentication-bypass",
+  "slug": "skf-host-header-authentication-bypass",
   "title": "OWASP SKF Host Header Authentication Bypass",
   "description": "A Flask product administration panel. The /dashboard and delete actions are meant for local users only, and the application decides what is local from the Host header.",
-  "question": "Reach the local-only administration panel without logging in by tampering with the Host header. The flag is in /ctf/flag.",
-  "category": "WEB",
+  "category": "web",
   "difficulty": 2,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Reach the local-only administration panel without logging in by tampering with the Host header. The flag is in /ctf/flag."
 }
